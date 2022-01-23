@@ -14,19 +14,19 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>JSON Formatter | Tool Kit</title>
-<meta name=description content="Hello, this is a JSON Formatter page.
+<title>Hidden TOC and Section Summary | Tool Kit</title>
+<meta name=description content="Page hidden from both the TOC menu and the section summary list.
 ">
-<meta property="og:title" content="JSON Formatter">
-<meta property="og:description" content="Hello, this is a JSON Formatter page.">
+<meta property="og:title" content="Hidden TOC and Section Summary">
+<meta property="og:description" content="Page hidden from both the TOC menu and the section summary list.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/docs/formatter/json/"><meta property="article:section" content="docs">
-<meta itemprop=name content="JSON Formatter">
-<meta itemprop=description content="Hello, this is a JSON Formatter page.">
-<meta itemprop=wordCount content="7">
+<meta property="og:url" content="/docs/examples/hidden-toc-summary/"><meta property="article:section" content="docs">
+<meta itemprop=name content="Hidden TOC and Section Summary">
+<meta itemprop=description content="Page hidden from both the TOC menu and the section summary list.">
+<meta itemprop=wordCount content="12">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="JSON Formatter">
-<meta name=twitter:description content="Hello, this is a JSON Formatter page.">
+<meta name=twitter:title content="Hidden TOC and Section Summary">
+<meta name=twitter:description content="Page hidden from both the TOC menu and the section summary list.">
 <link rel=preload href=/scss/main.min.eb407cee4ead00969a0c5b21ed83f575954f390bca0dcc24e6f0e12b5ff100e8.css as=style>
 <link href=/scss/main.min.eb407cee4ead00969a0c5b21ed83f575954f390bca0dcc24e6f0e12b5ff100e8.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
@@ -47,7 +47,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.56d5713a517f1800871e8a2e5d67d726.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.fbccca803567f197a9a70ffdbb6bd8bd.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div>
 </nav>
 </header>
@@ -57,7 +57,7 @@
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.56d5713a517f1800871e8a2e5d67d726.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.fbccca803567f197a9a70ffdbb6bd8bd.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -66,14 +66,14 @@
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docs-li>
 <a href=/docs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-docs><span>Documentation</span></a>
 <ul class=ul-1>
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsformatter-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsformatter-li>
 <a href=/docs/formatter/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsformatter><span>Formatter</span></a>
 <ul class="ul-2 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsformatterjson2go-li>
 <a href=/docs/formatter/json2go/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsformatterjson2go><span>JSON to GO</span></a>
 </li>
 </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsexamples-li>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsexamples-li>
 <a href=/docs/examples/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsexamples><span>Examples</span></a>
 <ul class="ul-2 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsexamplesinput-li>
@@ -100,18 +100,18 @@
 <a href=/docs/>Documentation</a>
 </li>
 <li class=breadcrumb-item>
-<a href=/docs/formatter/>Formatter</a>
+<a href=/docs/examples/>Examples</a>
 </li>
 <li class="breadcrumb-item active" aria-current=page>
-<a href=/docs/formatter/json/>JSON Formatter</a>
+<a href=/docs/examples/hidden-toc-summary/>Hidden TOC and Section Summary</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>JSON Formatter</h1>
+<h1>Hidden TOC and Section Summary</h1>
 <header class=article-meta>
 </header>
-<p>Hello, this is a JSON Formatter page.</p>
+<p>Page hidden from both the TOC menu and the section summary list.</p>
 </div>
 </main>
 </div>
