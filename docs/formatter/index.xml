@@ -10,6 +10,19 @@
 &lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
 &lt;/div>
 &lt;/div>
+&lt;div class="container">
+&lt;div class="row">
+&lt;div class="col align-self-start">
+One of three columns
+&lt;/div>
+&lt;div class="col align-self-center">
+One of three columns
+&lt;/div>
+&lt;div class="col align-self-end">
+One of three columns
+&lt;/div>
+&lt;/div>
+&lt;/div>
 &lt;!--
 &lt;script src="/js/jquery.min.js">&lt;/script>
 &lt;script src="/js/highlight.min.js">&lt;/script>
