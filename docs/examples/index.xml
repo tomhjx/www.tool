@@ -1,13 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Examples</title><link>/docs/examples/</link><description>Recent content in Examples on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/docs/examples/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Hidden Section Summary</title><link>/docs/examples/hidden-summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-summary/</guid><description>
 &lt;p>Page hidden from the section summary list.&lt;/p></description></item><item><title>Docs: Hidden TOC</title><link>/docs/examples/hidden-toc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-toc/</guid><description>
 &lt;p>Page hidden from the TOC menu.&lt;/p></description></item><item><title>Docs: Input</title><link>/docs/examples/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/input/</guid><description/></item><item><title>Docs: Primordial</title><link>/docs/examples/primordial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/primordial/</guid><description>
-&lt;section id="td-cover-block-0" class="row td-cover-block td-cover-block--height-full js-td-cover td-overlay td-overlay--dark -bg-orange">
-&lt;div class="container td-overlay__inner">
-&lt;div class="row">
-&lt;div class="col-12">
-&lt;div class="text-center">
-&lt;h1 class="display-1 mt-0 mt-md-5 pb-4">Welcome to Goldydocs: A Docsy Example Project!&lt;/h1>
-&lt;div class="pt-3 lead">
 &lt;div class="mx-auto">
 &lt;a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/">
 Learn More &lt;i class="fas fa-arrow-alt-circle-right ml-2">&lt;/i>
@@ -16,11 +9,4 @@ Learn More &lt;i class="fas fa-arrow-alt-circle-right ml-2">&lt;/i>
 Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;/a>
 &lt;p class="lead mt-5">Porridge temperature assessment - in the cloud!&lt;/p>
-&lt;a class="btn btn-link text-info" href="#td-block-1" aria-label="Read more">&lt;i class="fa fa-chevron-circle-down" style="font-size: 400%">&lt;/i>&lt;/a>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/section></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
