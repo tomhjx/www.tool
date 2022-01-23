@@ -14,22 +14,19 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>This Is My Post1 | Tool Kit</title>
-<meta name=description content="Hello, this is a my post 2 page.
+<title>Hidden Section Summary | Tool Kit</title>
+<meta name=description content="Page hidden from both the section summary list.
 ">
-<meta property="og:title" content="This Is My Post1">
-<meta property="og:description" content="Hello, this is a my post 2 page.">
+<meta property="og:title" content="Hidden Section Summary">
+<meta property="og:description" content="Page hidden from both the section summary list.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/blog/this-is-my-post1/"><meta property="article:section" content="blog">
-<meta property="article:published_time" content="2022-01-21T10:19:14+00:00">
-<meta property="article:modified_time" content="2022-01-21T10:19:14+00:00">
-<meta itemprop=name content="This Is My Post1">
-<meta itemprop=description content="Hello, this is a my post 2 page."><meta itemprop=datePublished content="2022-01-21T10:19:14+00:00">
-<meta itemprop=dateModified content="2022-01-21T10:19:14+00:00">
+<meta property="og:url" content="/docs/examples/hidden-summary/"><meta property="article:section" content="docs">
+<meta itemprop=name content="Hidden Section Summary">
+<meta itemprop=description content="Page hidden from both the section summary list.">
 <meta itemprop=wordCount content="8">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="This Is My Post1">
-<meta name=twitter:description content="Hello, this is a my post 2 page.">
+<meta name=twitter:title content="Hidden Section Summary">
+<meta name=twitter:description content="Page hidden from both the section summary list.">
 <link rel=preload href=/scss/main.min.eb407cee4ead00969a0c5b21ed83f575954f390bca0dcc24e6f0e12b5ff100e8.css as=style>
 <link href=/scss/main.min.eb407cee4ead00969a0c5b21ed83f575954f390bca0dcc24e6f0e12b5ff100e8.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
@@ -37,7 +34,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TEJLB7B10"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-3TEJLB7B10',{anonymize_ip:!1})}</script>
 </head>
-<body class="td-page td-blog">
+<body class=td-page>
 <header>
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
 <a class=navbar-brand href=/>
@@ -46,7 +43,7 @@
 <div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
 <ul class="navbar-nav mt-2 mt-lg-0">
 <li class="nav-item mr-4 mb-2 mb-lg-0">
-<a class=nav-link href=/docs/><span>Documentation</span></a>
+<a class="nav-link active" href=/docs/><span class=active>Documentation</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +63,27 @@
 </form>
 <nav class="collapse td-sidebar-nav" id=td-section-nav>
 <ul class="td-sidebar-nav__section pr-md-3 ul-0">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-blog-li>
-<a href=/blog/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-blog><span></span></a>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docs-li>
+<a href=/docs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-docs><span>Documentation</span></a>
 <ul class=ul-1>
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-blogthis-is-my-post2-li>
-<a href=/blog/this-is-my-post2/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-blogthis-is-my-post2><span>This Is My Post2</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-blogthis-is-my-post1-li>
-<a href=/blog/this-is-my-post1/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-blogthis-is-my-post1><span class=td-sidebar-nav-active-item>This Is My Post1</span></a>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsformatter-li>
+<a href=/docs/formatter/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsformatter><span>Formatter</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsformatterjson2go-li>
+<a href=/docs/formatter/json2go/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsformatterjson2go><span>JSON to GO</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsexamples-li>
+<a href=/docs/examples/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsexamples><span>Examples</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsexampleshidden-summary-li>
+<a href=/docs/examples/hidden-summary/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsexampleshidden-summary><span class=td-sidebar-nav-active-item>Hidden Section Summary</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsexamplesinput-li>
+<a href=/docs/examples/input/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsexamplesinput><span>Input</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsabc-li>
+<a href=/docs/abc/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsabc><span>ABC acc</span></a>
 </li>
 </ul>
 </li>
@@ -84,25 +95,25 @@
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
 </div>
 </aside>
-<main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role=main>
-<a class="btn btn-lg -bg-orange td-rss-button d-none d-lg-block" href=/blog/index.xml target=_blank>
-RSS <i class="fa fa-rss ml-2"></i>
-</a>
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<nav aria-label=breadcrumb class=td-breadcrumbs>
+<ol class=breadcrumb>
+<li class=breadcrumb-item>
+<a href=/docs/>Documentation</a>
+</li>
+<li class=breadcrumb-item>
+<a href=/docs/examples/>Examples</a>
+</li>
+<li class="breadcrumb-item active" aria-current=page>
+<a href=/docs/examples/hidden-summary/>Hidden Section Summary</a>
+</li>
+</ol>
+</nav>
 <div class=td-content>
-<h1>This Is My Post1</h1>
-<div class="td-byline mb-4">
-<time datetime=2022-01-21 class=text-muted>Friday, January 21, 2022</time>
-</div>
+<h1>Hidden Section Summary</h1>
 <header class=article-meta>
 </header>
-<p>Hello, this is a my post 2 page.</p>
-<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
-<li>
-<a class="btn btn-primary disabled"><span class=mr-1>←</span>Previous</a>
-</li>
-<a href=/blog/this-is-my-post2/ aria-label="Next - This Is My Post2" class="btn btn-primary">Next<span class=ml-1>→</span></a>
-</li>
-</ul>
+<p>Page hidden from both the section summary list.</p>
 </div>
 </main>
 </div>
