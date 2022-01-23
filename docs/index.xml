@@ -10,4 +10,18 @@ Learn More &lt;i class="fas fa-arrow-alt-circle-right ml-2">&lt;/i>
 Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;/a>
 &lt;p class="lead mt-5">Porridge temperature assessment - in the cloud!&lt;/p>
+&lt;/div>
+&lt;div class="input-group mb-3">
+&lt;span class="input-group-text">$&lt;/span>
+&lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+&lt;span class="input-group-text">.00&lt;/span>
+&lt;/div>
+&lt;div class="input-group mb-3">
+&lt;input type="text" class="form-control" placeholder="Username" aria-label="Username">
+&lt;span class="input-group-text">@&lt;/span>
+&lt;input type="text" class="form-control" placeholder="Server" aria-label="Server">
+&lt;/div>
+&lt;div class="input-group">
+&lt;span class="input-group-text">With textarea&lt;/span>
+&lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
 &lt;/div></description></item></channel></rss>
