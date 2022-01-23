@@ -2,10 +2,10 @@
 &lt;p>Hello abc.&lt;/p></description></item><item><title>Docs: Hidden Section Summary</title><link>/docs/examples/hidden-summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-summary/</guid><description>
 &lt;p>Page hidden from the section summary list.&lt;/p></description></item><item><title>Docs: Hidden TOC</title><link>/docs/examples/hidden-toc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-toc/</guid><description>
 &lt;p>Page hidden from the TOC menu.&lt;/p></description></item><item><title>Docs: Input</title><link>/docs/examples/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/input/</guid><description/></item><item><title>Docs: JSON to GO</title><link>/docs/formatter/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/formatter/json2go/</guid><description>
-&lt;div class="container -bg-primary">
+&lt;div class="container h-600">
 &lt;div class="row">
 &lt;div class="col">
-&lt;div class="form-control h-600" contenteditable="true" placeholder="How's your fitness going?...">&lt;/div>
+&lt;div class="form-control" contenteditable="true" placeholder="How's your fitness going?...">&lt;/div>
 &lt;/div>
 &lt;div class="col">
 &lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
