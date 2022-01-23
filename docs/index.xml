@@ -5,7 +5,7 @@
 &lt;div class="container -bg-primary">
 &lt;div class="row">
 &lt;div class="col">
-&lt;div class="form-control" contenteditable="true" placeholder="How's your fitness going?...">&lt;/div>
+&lt;div class="form-control h-600" contenteditable="true" placeholder="How's your fitness going?...">&lt;/div>
 &lt;/div>
 &lt;div class="col">
 &lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
