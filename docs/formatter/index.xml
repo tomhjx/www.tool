@@ -1,6 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Formatter</title><link>/docs/formatter/</link><description>Recent content in Formatter on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/docs/formatter/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: JSON to GO</title><link>/docs/formatter/json2go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/formatter/json2go/</guid><description>
-&lt;div class="container">
+&lt;div class="container" >
 &lt;div class="col-md-12 sol-sm-12" contenteditable="true" place-text="How's your fitness going?...">&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col">
+&lt;div class="form-control" contenteditable="true" place-text="How's your fitness going?...">&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+&lt;/div>
 &lt;/div>
 &lt;!--
 &lt;script src="/js/jquery.min.js">&lt;/script>
