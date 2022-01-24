@@ -12,8 +12,10 @@ Rich TypeScript IntelliSense, Validation
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
+$(function(){
 var editor = monaco.editor.create(document.getElementsByClassName('_editor'), {
 value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 language: 'typescript'
 });
+})
 &lt;/script></description></item></channel></rss>
