@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Editor</title><link>/docs/editor/</link><description>Recent content in Editor on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/docs/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: TypeScript Editor</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
+&lt;link data-name="vs/editor/editor.main" rel="stylesheet" href="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
+&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
+&lt;div id="container" style="width: 800px; height: 600px; border: 1px solid grey">&lt;/div>
+&lt;script>
+var editor = monaco.editor.create(document.getElementById('container'), {
+value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+language: 'typescript'
+});
+&lt;/script></description></item></channel></rss>
