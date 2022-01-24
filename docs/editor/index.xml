@@ -28,6 +28,35 @@ oldModel.dispose();
 });
 });
 })
+&lt;/script></description></item><item><title>Docs: JSON</title><link>/docs/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/json/</guid><description>
+&lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
+&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script>
+$(function(){
+var blockID = "editorcontainer0";
+var modeId = 'json';
+require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require(['vs/editor/editor.main'], function () {
+var editor = monaco.editor.create(document.getElementById(blockID), {
+language: modeId
+});
+$.ajax({
+type: 'GET',
+url: "https://microsoft.github.io/monaco-editor/index/samples/sample.json.txt",
+dataType: 'text',
+error: function () {
+console.log("load "+blockID+"'s sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
+});
+});
+})
 &lt;/script></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>

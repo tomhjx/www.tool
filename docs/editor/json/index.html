@@ -14,21 +14,21 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>JavaScript | Tool Kit</title>
-<meta name=description content="Rich JavaScript IntelliSense, Validation.
+<title>JSON | Tool Kit</title>
+<meta name=description content="Rich JSON IntelliSense, Validation.
 ">
-<meta property="og:title" content="JavaScript">
-<meta property="og:description" content="Rich JavaScript IntelliSense, Validation.
+<meta property="og:title" content="JSON">
+<meta property="og:description" content="Rich JSON IntelliSense, Validation.
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/docs/editor/javascript/"><meta property="article:section" content="docs">
-<meta itemprop=name content="JavaScript">
-<meta itemprop=description content="Rich JavaScript IntelliSense, Validation.
+<meta property="og:url" content="/docs/editor/json/"><meta property="article:section" content="docs">
+<meta itemprop=name content="JSON">
+<meta itemprop=description content="Rich JSON IntelliSense, Validation.
 ">
-<meta itemprop=wordCount content="70">
+<meta itemprop=wordCount content="65">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="JavaScript">
-<meta name=twitter:description content="Rich JavaScript IntelliSense, Validation.
+<meta name=twitter:title content="JSON">
+<meta name=twitter:description content="Rich JSON IntelliSense, Validation.
 ">
 <link rel=preload href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css as=style>
 <link href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css rel=stylesheet integrity>
@@ -72,10 +72,10 @@
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docseditor-li>
 <a href=/docs/editor/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docseditor><span>Editor</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docseditorjavascript-li>
-<a href=/docs/editor/javascript/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docseditorjavascript><span class=td-sidebar-nav-active-item>JavaScript</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditorjson-li>
-<a href=/docs/editor/json/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorjson><span>JSON</span></a>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditorjavascript-li>
+<a href=/docs/editor/javascript/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorjavascript><span>JavaScript</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docseditorjson-li>
+<a href=/docs/editor/json/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docseditorjson><span class=td-sidebar-nav-active-item>JSON</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditortypescript-li>
 <a href=/docs/editor/typescript/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditortypescript><span>TypeScript</span></a>
 </li>
@@ -123,19 +123,18 @@
 <a href=/docs/editor/>Editor</a>
 </li>
 <li class="breadcrumb-item active" aria-current=page>
-<a href=/docs/editor/javascript/>JavaScript</a>
+<a href=/docs/editor/json/>JSON</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>JavaScript</h1>
-<div class=lead>Rich JavaScript IntelliSense, Validation.</div>
+<h1>JSON</h1>
+<div class=lead>Rich JSON IntelliSense, Validation.</div>
 <header class=article-meta>
 </header>
-<p>To learn more about <a href=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript>JavaScript</a></p>
 <div id=editorcontainer0 class="td-box--height-full border w-100"></div>
 <script src=https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js></script>
-<script>$(function(){var a="editorcontainer0",b='javascript';require.config({paths:{vs:'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs'}}),require(['vs/editor/editor.main'],function(){var c=monaco.editor.create(document.getElementById(a),{language:b});$.ajax({type:'GET',url:"https://microsoft.github.io/monaco-editor/index/samples/sample.javascript.txt",dataType:'text',error:function(){console.log("load "+a+"'s sample fail.")}}).done(function(d){var a=c.getModel(),e=monaco.editor.createModel(d,b);c.setModel(e),a&&a.dispose()})})})</script>
+<script>$(function(){var a="editorcontainer0",b='json';require.config({paths:{vs:'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs'}}),require(['vs/editor/editor.main'],function(){var c=monaco.editor.create(document.getElementById(a),{language:b});$.ajax({type:'GET',url:"https://microsoft.github.io/monaco-editor/index/samples/sample.json.txt",dataType:'text',error:function(){console.log("load "+a+"'s sample fail.")}}).done(function(d){var a=c.getModel(),e=monaco.editor.createModel(d,b);c.setModel(e),a&&a.dispose()})})})</script>
 </div>
 </main>
 </div>
