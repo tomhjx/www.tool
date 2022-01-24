@@ -4,7 +4,7 @@ Rich TypeScript IntelliSense, Validation
 &lt;section class="row td-box td-box--white td-box--gradient td-box--height-full">
 &lt;div class="col">
 &lt;div class="row ">
-&lt;div id="editorcontainer" style="width: 100%; height: auto; border: 1px solid grey">&lt;/div>
+&lt;div id="editorcontainer" style="width: 100%; height: 600px; border: 1px solid grey">&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;/section>
