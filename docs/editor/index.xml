@@ -9,6 +9,9 @@ Rich TypeScript IntelliSense, Validation
 &lt;/div>
 &lt;/section>
 &lt;link data-name="vs/editor/editor.main" rel="stylesheet" href="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.css" />
+&lt;script>
+var require = { paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } };
+&lt;/script>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
