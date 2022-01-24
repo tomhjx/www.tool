@@ -67,7 +67,7 @@ Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;div class="input-group">
 &lt;span class="input-group-text">With textarea&lt;/span>
 &lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
-&lt;/div></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
+&lt;/div></description></item><item><title>Docs: TypeScript Editor</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
 Rich TypeScript IntelliSense, Validation
 &lt;a id="td-block-0" class="td-offset-anchor">&lt;/a>
 &lt;section class="row td-box td-box--white td-box--gradient td-box--height-full">
@@ -82,7 +82,7 @@ Rich TypeScript IntelliSense, Validation
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
-var editor = monaco.editor.create(document.getElementsByClassName('_editor'), {
+var editor = monaco.editor.create(document.getElementsByClassName("_editor")[0], {
 value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 language: 'typescript'
 });
