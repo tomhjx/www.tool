@@ -85,7 +85,8 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item><item><title>Docs: JSON</title><link>/docs/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/json/</guid><description>
+&lt;/script>
+&lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Docs: JSON</title><link>/docs/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/json/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -114,7 +115,8 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item><item><title>Docs: LESS</title><link>/docs/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/less/</guid><description>
+&lt;/script>
+&lt;p>To learn more about &lt;a href="https://www.json.org/json-en.html">JSON&lt;/a>&lt;/p></description></item><item><title>Docs: LESS</title><link>/docs/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/less/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -173,7 +175,6 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
-&lt;p>To learn more about &lt;a href="http://www.typescriptlang.org/">TypeScript&lt;/a>&lt;/p>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -202,4 +203,5 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item></channel></rss>
+&lt;/script>
+&lt;p>To learn more about &lt;a href="http://www.typescriptlang.org/">TypeScript&lt;/a>&lt;/p></description></item></channel></rss>
