@@ -1,5 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Tools</title><link>/docs/</link><description>Recent content in Tools on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 21 Jan 2022 06:58:57 +0000</lastBuildDate><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: ABC acc</title><link>/docs/abc/</link><pubDate>Fri, 21 Jan 2022 06:58:57 +0000</pubDate><guid>/docs/abc/</guid><description>
-&lt;p>Hello abc.&lt;/p></description></item><item><title>Docs: CSS</title><link>/docs/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/css/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Tools</title><link>/docs/</link><description>Recent content in Tools on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: CSS</title><link>/docs/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/css/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -29,9 +28,7 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Docs: CURL to GO</title><link>/docs/formatter/curl2to/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/formatter/curl2to/</guid><description>
-Coming soon</description></item><item><title>Docs: Hidden Section Summary</title><link>/docs/examples/hidden-summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-summary/</guid><description>
-&lt;p>Page hidden from the section summary list.&lt;/p></description></item><item><title>Docs: Hidden TOC</title><link>/docs/examples/hidden-toc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-toc/</guid><description>
-&lt;p>Page hidden from the TOC menu.&lt;/p></description></item><item><title>Docs: HTML</title><link>/docs/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/html/</guid><description>
+Coming soon</description></item><item><title>Docs: HTML</title><link>/docs/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/html/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -60,7 +57,7 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item><item><title>Docs: Input</title><link>/docs/examples/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/input/</guid><description/></item><item><title>Docs: JavaScript</title><link>/docs/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/javascript/</guid><description>
+&lt;/script></description></item><item><title>Docs: JavaScript</title><link>/docs/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/javascript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -191,30 +188,7 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item><item><title>Docs: Primordial</title><link>/docs/examples/primordial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/primordial/</guid><description>
-&lt;div class="mx-auto">
-&lt;a class="btn btn-lg btn-primary mr-3 mb-4" href="/docs/">
-Learn More &lt;i class="fas fa-arrow-alt-circle-right ml-2">&lt;/i>
-&lt;/a>
-&lt;a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
-&lt;/a>
-&lt;p class="lead mt-5">Porridge temperature assessment - in the cloud!&lt;/p>
-&lt;/div>
-&lt;div class="input-group mb-3">
-&lt;span class="input-group-text">$&lt;/span>
-&lt;input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-&lt;span class="input-group-text">.00&lt;/span>
-&lt;/div>
-&lt;div class="input-group mb-3">
-&lt;input type="text" class="form-control" placeholder="Username" aria-label="Username">
-&lt;span class="input-group-text">@&lt;/span>
-&lt;input type="text" class="form-control" placeholder="Server" aria-label="Server">
-&lt;/div>
-&lt;div class="input-group">
-&lt;span class="input-group-text">With textarea&lt;/span>
-&lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
-&lt;/div></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
+&lt;/script></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
