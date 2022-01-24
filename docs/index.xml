@@ -68,21 +68,14 @@ Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;span class="input-group-text">With textarea&lt;/span>
 &lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
 &lt;/div></description></item><item><title>Docs: TypeScript Editor</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
-&lt;a id="td-block-0" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--white td-box--gradient td-box--height-auto">
-&lt;div class="col">
-&lt;div class="row ">
-Rich TypeScript IntelliSense, Validation
-&lt;/div>
-&lt;/div>
-&lt;/section>
-&lt;div id="editorcontainer1" class="td-box--height-full border w-100" >&lt;/div>
+&lt;p>Rich TypeScript IntelliSense, Validation&lt;/p>
+&lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
-var editor = monaco.editor.create(document.getElementById("editorcontainer1"), {
+var editor = monaco.editor.create(document.getElementById("editorcontainer0"), {
 value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 language: 'typescript'
 });
