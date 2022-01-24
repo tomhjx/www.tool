@@ -3,7 +3,7 @@ Coming soon</description></item><item><title>Docs: JSON to GO</title><link>/docs
 &lt;link rel="stylesheet" href="/css/content/docs/formatter/json2go.css">
 &lt;script src="/js/highlight.min.js">&lt;/script>
 &lt;script src="/js/json-to-go.js">&lt;/script>
-&lt;script src="/js/common.js">&lt;/script>
+&lt;script src="/js/content/docs/formatter/json2go.js">&lt;/script>
 &lt;script src="/js/gofmt.js" async>&lt;/script>
 &lt;div class="container">
 &lt;div class="row">
