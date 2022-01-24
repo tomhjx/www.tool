@@ -70,18 +70,14 @@ Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;/div></description></item><item><title>Docs: TypeScript Editor</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
 Rich `TypeScript` IntelliSense, Validation
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;link data-name="vs/editor/editor.main" rel="stylesheet" href="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.css" />
-&lt;script>
-var require = { paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } };
-&lt;/script>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
 $(function(){
+require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById("editorcontainer0"), {
 value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 language: 'typescript'
+});
 });
 })
 &lt;/script></description></item></channel></rss>
