@@ -68,19 +68,11 @@ Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;span class="input-group-text">With textarea&lt;/span>
 &lt;textarea class="form-control" aria-label="With textarea">&lt;/textarea>
 &lt;/div></description></item><item><title>Docs: TypeScript Editor</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
+Rich TypeScript IntelliSense, Validation
 &lt;a id="td-block-0" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--0 position-relative td-box--gradient td-box--height-auto">
-&lt;div class="container text-center td-arrow-down">
-&lt;span class="h4 mb-0">
-&lt;p>Rich TypeScript IntelliSense, Validation&lt;/p>
-&lt;/span>
-&lt;/div>
-&lt;/section>
-&lt;a id="td-block-1" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--1 td-box--gradient td-box--height-auto">
+&lt;section class="row td-box td-box--light td-box--gradient td-box--height-full">
 &lt;div class="col">
-&lt;div class="row ">
-&lt;div id="container" style="width: 800px; height: 600px; border: 1px solid grey">&lt;/div>
+&lt;div class="row #editor">
 &lt;/div>
 &lt;/div>
 &lt;/section>
@@ -89,7 +81,7 @@ Download &lt;i class="fab fa-github ml-2 ">&lt;/i>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.nls.js">&lt;/script>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/editor/editor.main.js">&lt;/script>
 &lt;script>
-var editor = monaco.editor.create(document.getElementById('container'), {
+var editor = monaco.editor.create(document.getElementsByClassName(('#editor')), {
 value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
 language: 'typescript'
 });
