@@ -4,11 +4,27 @@
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
+var blockID = "editorcontainer0";
+var modeId = 'javascript';
 require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
-var editor = monaco.editor.create(document.getElementById("editorcontainer0"), {
-value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-language: 'javascript'
+var editor = monaco.editor.create(document.getElementById(blockID), {
+language: modeId
+});
+$.ajax({
+type: 'GET',
+url: "https://microsoft.github.io/monaco-editor/index/samples/sample.javascript.txt",
+dataType: 'text',
+error: function () {
+console.log("load "+blockID+"'s sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
 });
 });
 })
@@ -17,11 +33,27 @@ language: 'javascript'
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
+var blockID = "editorcontainer0";
+var modeId = 'typescript';
 require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
-var editor = monaco.editor.create(document.getElementById("editorcontainer0"), {
-value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-language: 'typescript'
+var editor = monaco.editor.create(document.getElementById(blockID), {
+language: modeId
+});
+$.ajax({
+type: 'GET',
+url: "https://microsoft.github.io/monaco-editor/index/samples/sample.typescript.txt",
+dataType: 'text',
+error: function () {
+console.log("load "+blockID+"'s sample fail.")
+}
+}).done(function (data) {
+var oldModel = editor.getModel();
+var newModel = monaco.editor.createModel(data, modeId);
+editor.setModel(newModel);
+if (oldModel) {
+oldModel.dispose();
+}
 });
 });
 })
