@@ -3,7 +3,7 @@
 Coming soon</description></item><item><title>Docs: Hidden Section Summary</title><link>/docs/examples/hidden-summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-summary/</guid><description>
 &lt;p>Page hidden from the section summary list.&lt;/p></description></item><item><title>Docs: Hidden TOC</title><link>/docs/examples/hidden-toc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/hidden-toc/</guid><description>
 &lt;p>Page hidden from the TOC menu.&lt;/p></description></item><item><title>Docs: Input</title><link>/docs/examples/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/examples/input/</guid><description/></item><item><title>Docs: JavaScript</title><link>/docs/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/javascript/</guid><description>
-&lt;p>Rich &lt;code>JavaScript&lt;/code> IntelliSense, Validation&lt;/p>
+&lt;p>To learn more about &lt;a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">JavaScript&lt;/a>&lt;/p>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
