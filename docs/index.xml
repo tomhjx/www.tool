@@ -667,7 +667,6 @@ var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'-output');
 mermaid.initialize({ startOnLoad: false });
 input.onkeyup = function() {
-preview.innerHTML = input.value;
 mermaidAPI.render('theGraph', input.value, function(svgCode) {
 output.innerHTML = svgCode;
 });
