@@ -165,6 +165,7 @@ B -->|tcp_456| D[Server2]
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/+esm';
 mermaid.initialize({ startOnLoad: true });
 &lt;/script>
+&lt;div contenteditable="true" class="border w-100 h-100">&lt;/div>
 &lt;p>To learn more about &lt;a href="https://mermaid.js.org/">Mermaid&lt;/a>&lt;/p></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
