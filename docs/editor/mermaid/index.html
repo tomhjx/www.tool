@@ -25,7 +25,7 @@
 <meta itemprop=name content="Markdown Mermaid">
 <meta itemprop=description content="Rich IntelliSense, Validation for Mermaid.
 ">
-<meta itemprop=wordCount content="70">
+<meta itemprop=wordCount content="47">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Markdown Mermaid">
 <meta name=twitter:description content="Rich IntelliSense, Validation for Mermaid.
@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.addf1cd4e93aafd6c3a7bf2ebeff6d97.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.525ad66cb82cfd858be91ecd96cd892a.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div>
 </nav>
 </header>
@@ -63,7 +63,7 @@
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.addf1cd4e93aafd6c3a7bf2ebeff6d97.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.525ad66cb82cfd858be91ecd96cd892a.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -139,9 +139,25 @@
 <div class=lead>Rich IntelliSense, Validation for Mermaid.</div>
 <header class=article-meta>
 </header>
-<div id=editorcontainer0 class="td-box--height-full border w-100"></div>
-<script src=https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js></script>
-<script>$(function(){var a="editorcontainer0",b='mermaid';require.config({paths:{vs:'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs'}}),require(['vs/editor/editor.main'],function(){var c=monaco.editor.create(document.getElementById(a),{language:b});$.ajax({type:'GET',url:"https://microsoft.github.io/monaco-editor/index/samples/sample.mermaid.txt",dataType:'text',error:function(){console.log("load "+a+"'s sample fail.")}}).done(function(d){var a=c.getModel(),e=monaco.editor.createModel(d,b);c.setModel(e),a&&a.dispose()})})})</script>
+Here is one mermaid diagram:
+<pre class=mermaid>
+        graph TD 
+        A[Client] --> B[Load Balancer] 
+        B --> C[Server1] 
+        B --> D[Server2]
+</pre>
+And here is another:
+<pre class=mermaid>
+        graph TD 
+        A[Client] -->|tcp_123| B
+        B(Load Balancer) 
+        B -->|tcp_456| C[Server1] 
+        B -->|tcp_456| D[Server2]
+</pre>
+<script type=module>
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 <p>To learn more about <a href=https://mermaid.js.org/>Mermaid</a></p>
 </div>
 </main>
