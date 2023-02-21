@@ -162,7 +162,7 @@ B -->|tcp_456| C[Server1]
 B -->|tcp_456| D[Server2]
 &lt;/pre>
 &lt;script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs';
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/+esm';
 mermaid.initialize({ startOnLoad: true });
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://mermaid.js.org/">Mermaid&lt;/a>&lt;/p></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
