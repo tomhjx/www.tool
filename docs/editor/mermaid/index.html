@@ -3,7 +3,6 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=generator content="Hugo 0.92.0">
-<link rel=alternate type=application/rss+xml href=/docs/editor/index.xml>
 <meta name=robots content="index, follow">
 <link rel="shortcut icon" href=/favicons/favicon.ico>
 <link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
@@ -15,19 +14,21 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>Editor | Tool Kit</title>
-<meta name=description content="Rich IntelliSense, Validation for some code.
+<title>Markdown Mermaid | Tool Kit</title>
+<meta name=description content="Rich IntelliSense, Validation for Mermaid.
 ">
-<meta property="og:title" content="Editor">
-<meta property="og:description" content="Rich IntelliSense, Validation for some code.
+<meta property="og:title" content="Markdown Mermaid">
+<meta property="og:description" content="Rich IntelliSense, Validation for Mermaid.
 ">
-<meta property="og:type" content="website">
-<meta property="og:url" content="/docs/editor/">
-<meta itemprop=name content="Editor">
-<meta itemprop=description content="Rich IntelliSense, Validation for some code.
-"><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Editor">
-<meta name=twitter:description content="Rich IntelliSense, Validation for some code.
+<meta property="og:type" content="article">
+<meta property="og:url" content="/docs/editor/mermaid/"><meta property="article:section" content="docs">
+<meta itemprop=name content="Markdown Mermaid">
+<meta itemprop=description content="Rich IntelliSense, Validation for Mermaid.
+">
+<meta itemprop=wordCount content="70">
+<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Markdown Mermaid">
+<meta name=twitter:description content="Rich IntelliSense, Validation for Mermaid.
 ">
 <link rel=preload href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css as=style>
 <link href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css rel=stylesheet integrity>
@@ -36,7 +37,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TEJLB7B10"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-3TEJLB7B10',{anonymize_ip:!1})}</script>
 </head>
-<body class=td-section>
+<body class=td-page>
 <header>
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
 <a class=navbar-brand href=/>
@@ -72,7 +73,7 @@
 <a href=/docs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-docs><span>Documentation</span></a>
 <ul class=ul-1>
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docseditor-li>
-<a href=/docs/editor/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-docseditor><span class=td-sidebar-nav-active-item>Editor</span></a>
+<a href=/docs/editor/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docseditor><span>Editor</span></a>
 <ul class="ul-2 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditorcss-li>
 <a href=/docs/editor/css/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorcss><span>CSS</span></a>
@@ -84,8 +85,8 @@
 <a href=/docs/editor/json/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorjson><span>JSON</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditorless-li>
 <a href=/docs/editor/less/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorless><span>LESS</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditormermaid-li>
-<a href=/docs/editor/mermaid/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditormermaid><span>Markdown Mermaid</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docseditormermaid-li>
+<a href=/docs/editor/mermaid/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docseditormermaid><span class=td-sidebar-nav-active-item>Markdown Mermaid</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditorscss-li>
 <a href=/docs/editor/scss/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docseditorscss><span>SCSS</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docseditortypescript-li>
@@ -125,67 +126,23 @@
 <li class=breadcrumb-item>
 <a href=/docs/>Documentation</a>
 </li>
-<li class="breadcrumb-item active" aria-current=page>
+<li class=breadcrumb-item>
 <a href=/docs/editor/>Editor</a>
+</li>
+<li class="breadcrumb-item active" aria-current=page>
+<a href=/docs/editor/mermaid/>Markdown Mermaid</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>Editor</h1>
-<div class=lead>Rich IntelliSense, Validation for some code.</div>
+<h1>Markdown Mermaid</h1>
+<div class=lead>Rich IntelliSense, Validation for Mermaid.</div>
 <header class=article-meta>
 </header>
-<div class=section-index>
-<hr class=panel-line>
-<div class=entry>
-<h5>
-<a href=/docs/editor/css/>CSS</a>
-</h5>
-<p>Rich IntelliSense, Validation for CSS.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/html/>HTML</a>
-</h5>
-<p>Rich IntelliSense, Validation for HTML.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/javascript/>JavaScript</a>
-</h5>
-<p>Rich IntelliSense, Validation for JavaScript.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/json/>JSON</a>
-</h5>
-<p>Rich IntelliSense, Validation for JSON.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/less/>LESS</a>
-</h5>
-<p>Rich IntelliSense, Validation for LESS.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/mermaid/>Markdown Mermaid</a>
-</h5>
-<p>Rich IntelliSense, Validation for Mermaid.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/scss/>SCSS</a>
-</h5>
-<p>Rich IntelliSense, Validation for SCSS.</p>
-</div>
-<div class=entry>
-<h5>
-<a href=/docs/editor/typescript/>TypeScript</a>
-</h5>
-<p>Rich IntelliSense, Validation for TypeScript.</p>
-</div>
-</div>
+<div id=editorcontainer0 class="td-box--height-full border w-100"></div>
+<script src=https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js></script>
+<script>$(function(){var a="editorcontainer0",b='mermaid';require.config({paths:{vs:'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs'}}),require(['vs/editor/editor.main'],function(){var c=monaco.editor.create(document.getElementById(a),{language:b});$.ajax({type:'GET',url:"https://microsoft.github.io/monaco-editor/index/samples/sample.mermaid.txt",dataType:'text',error:function(){console.log("load "+a+"'s sample fail.")}}).done(function(d){var a=c.getModel(),e=monaco.editor.createModel(d,b);c.setModel(e),a&&a.dispose()})})})</script>
+<p>To learn more about <a href=https://mermaid.js.org/>Mermaid</a></p>
 </div>
 </main>
 </div>
