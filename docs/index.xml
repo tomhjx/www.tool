@@ -674,7 +674,7 @@ flowchart: { useMaxWidth: false },
 "themeVariables": {
 "fontFamily": "Helvetica"
 }
-}, document.querySelectorAll(".mermaid"));
+}, output);
 }
 })
 &lt;/script>
