@@ -658,8 +658,7 @@ B -->|tcp_456| C[Server1]
 B -->|tcp_456| D[Server2]
 &lt;/pre>
 &lt;div id="mermaideditorcontainer0" contenteditable="true" class="border w-100">&lt;/div>
-&lt;div id="mermaideditorcontainer0-output">&lt;/div>
-&lt;pre id="theGraph">&lt;/pre>
+&lt;div id="mermaideditorcontainer0-output" class="mermaid" >&lt;/div>
 &lt;script type="module">
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/+esm';
 mermaid.initialize({ startOnLoad: false });
@@ -667,6 +666,8 @@ $(function(){
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'-output');
+input.onkeyup = function() {
+output.innerText = input.innerText
 mermaid.init({
 flowchart: { useMaxWidth: false },
 "theme": "default",
@@ -674,6 +675,7 @@ flowchart: { useMaxWidth: false },
 "fontFamily": "Helvetica"
 }
 }, document.querySelectorAll(".mermaid"));
+}
 })
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://mermaid.js.org/">Mermaid&lt;/a>&lt;/p></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
