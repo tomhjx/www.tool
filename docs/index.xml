@@ -667,6 +667,7 @@ var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'-output');
 input.onkeyup = function() {
 output.innerText = input.value;
+console.log(output.innerText)
 mermaid.initialize();
 };
 })
