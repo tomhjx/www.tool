@@ -25,7 +25,7 @@
 <meta itemprop=name content="Markdown Mermaid">
 <meta itemprop=description content="Rich IntelliSense, Validation for Mermaid.
 ">
-<meta itemprop=wordCount content="84">
+<meta itemprop=wordCount content="68">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Markdown Mermaid">
 <meta name=twitter:description content="Rich IntelliSense, Validation for Mermaid.
@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.29f3dcd1567f4549a32a1ca165236f45.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d029e392ceb6853951c7454d961752f7.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div>
 </nav>
 </header>
@@ -63,7 +63,7 @@
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.29f3dcd1567f4549a32a1ca165236f45.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.d029e392ceb6853951c7454d961752f7.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -164,24 +164,21 @@ mermaid.initialize({ startOnLoad: false });
         var input = document.getElementById(blockID);
         var output = document.getElementById(blockID+'-output');
 
-        
-        
-        
-        
-        
-
-
-
         input.onkeyup = function() {
-                output.innerText = input.innerText
-                mermaid.init({
-                flowchart: { useMaxWidth: false },
-                "theme": "default",
-                "themeVariables": {
-                        "fontFamily": "Helvetica"
-                }
-                }, output);
+                mermaid.render(input.innerText, output);
         }
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
     })
 
