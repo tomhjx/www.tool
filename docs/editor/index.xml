@@ -146,8 +146,8 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/mermaid/</guid><description>
-&lt;div class="container text-center">
-&lt;div class="row align-items-start">
+&lt;div class="container text-left">
+&lt;div class="row">
 &lt;div class="col">
 &lt;textarea id="mermaideditorcontainer0" class="border w-100" style="height: 200px;" >&lt;/textarea>
 &lt;/div>
