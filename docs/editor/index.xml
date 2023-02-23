@@ -155,10 +155,7 @@ oldModel.dispose();
 &lt;button type="button" class="btn btn-primary">Copy Image&lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;div class="row">
-&lt;div id="mermaideditorcontainer0-output" class="col">
-&lt;/div>
-&lt;/div>
+&lt;div id="mermaideditorcontainer0-output" class="row">&lt;/div>
 &lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">&lt;/script>
 &lt;script >
