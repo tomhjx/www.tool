@@ -147,9 +147,11 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/mermaid/</guid><description>
 &lt;textarea id="mermaideditorcontainer0" class="border w-50" style="height: 200px;" >&lt;/textarea>
+&lt;button type="button" class="btn btn-primary">Copy Image&lt;/button>
 &lt;div id="mermaideditorcontainer0-output" >&lt;/div>
 &lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">&lt;/script>
 &lt;script >
+mermaid.initialize({startOnLoad:false});
 $(function(){
 console.log("v2023-02-23 01:01:43")
 var blockID = "mermaideditorcontainer0";
