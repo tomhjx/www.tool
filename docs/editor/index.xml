@@ -150,7 +150,12 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col">
 &lt;textarea id="mermaideditorcontainer0" class="border w-100" style="height: 200px;" >&lt;/textarea>
-&lt;button type="button" class="btn btn-primary">Copy Image&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Link to view&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Link to Image&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Link to SVG&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Copy Image&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Download PNG&lt;/button>
+&lt;button type="button" class="btn btn-secondary">Download SVG&lt;/button>
 &lt;/div>
 &lt;div id="mermaideditorcontainer0-output" class="col">&lt;/div>
 &lt;/div>
