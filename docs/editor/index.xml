@@ -152,7 +152,7 @@ oldModel.dispose();
 &lt;textarea id="mermaideditorcontainer0" class="border w-100" style="height: 200px;" >&lt;/textarea>
 &lt;/div>
 &lt;div class="col">
-&lt;button type="button" class="btn btn-secondary">Copy Image&lt;/button>
+&lt;button type="button" class="btn btn-primary">Copy Image&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
