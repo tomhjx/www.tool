@@ -164,17 +164,43 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("v2023-02-23 01:01:43")
+console.log("v2023-02-27 00:59:53")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
+var svgData = '';
 input.onkeyup = function() {
 mermaid.mermaidAPI.render('theGraph', input.value, function(svgCode) {
-output.innerHTML = svgCode;
+svgData = output.innerHTML = svgCode;
 });
+}
+function loadImage(onload) {
+var img = new Image();
+img.addEventListener('load', onload);
+img.src = url;
 }
 $('#'+blockID+'DownloadPNG').click(function(){
 console.log('click DownloadPNG.')
+});
+$('#'+blockID+'LinkToView').click(function(){
+var DOMURL = window.URL || window.webkitURL || window;
+var b64str = DOMURL.createObjectURL(svgData);
+var _img = loadImage(b64str, function(){
+var imgH=_img.naturalHeight;
+var imgW=_img.naturalWidth;
+const scale = window.devicePixelRatio*2;
+var _canvas = document.createElement('canvas');
+_canvas.width=imgW;
+_canvas.height=imgH;
+var _ctx = _canvas.getContext('2d');
+_canvas['style']['width'] = `${Math.round(imgW/scale)}px`;
+_canvas['style']['height'] = `${Math.round(imgH/scale)}px`;
+_canvas['style']['margin'] = '0';
+_canvas['style']['padding'] = '0';
+_ctx.scale(scale, scale);
+_ctx.drawImage(_img, 0, 0, Math.round(imgW/scale), Math.round(imgH/scale));
+window.open(_canvas.toDataURL())
+});
 });
 })
 &lt;/script>
