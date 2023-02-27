@@ -164,7 +164,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("v2023-02-27 00:59:53")
+console.log("v2023-02-27 23:37:59")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -183,8 +183,7 @@ $('#'+blockID+'DownloadPNG').click(function(){
 console.log('click DownloadPNG.')
 });
 $('#'+blockID+'LinkToView').click(function(){
-var DOMURL = window.URL || window.webkitURL || window;
-var b64str = DOMURL.createObjectURL(svgData);
+var b64str = URL.createObjectURL(svgData);
 var _img = loadImage(b64str, function(){
 var imgH=_img.naturalHeight;
 var imgW=_img.naturalWidth;
