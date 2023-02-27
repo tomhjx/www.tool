@@ -177,7 +177,7 @@ svg = output.querySelector('svg');
 }
 function loadImage(onload) {
 var img = new Image();
-img.addEventListener('load', onload);
+img.onload = onload;
 img.src = url;
 }
 $('#'+blockID+'DownloadPNG').click(function(){
