@@ -164,7 +164,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-02-28 09:07:33")
+console.log("2023-03-02 09:02:33")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -177,6 +177,7 @@ svg = output.querySelector('svg');
 }
 function loadImage(url, onload) {
 var img = new Image();
+img.crossOrigin="anonymous";
 img.onload = onload;
 img.src = url;
 return img;
@@ -203,7 +204,7 @@ _canvas['style']['margin'] = '0';
 _canvas['style']['padding'] = '0';
 _ctx.scale(scale, scale);
 _ctx.drawImage(_img, 0, 0, Math.round(imgW/scale), Math.round(imgH/scale));
-window.open(_canvas.toDataURL())
+window.open(_canvas.toDataURL('image/png'))
 });
 });
 })
