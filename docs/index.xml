@@ -673,8 +673,8 @@ svg = output.querySelector('svg');
 }
 function loadImage(url, onload) {
 var img = new Image();
-img.crossOrigin="anonymous";
 img.onload = onload;
+img.crossOrigin="anonymous";
 img.src = url;
 return img;
 }
