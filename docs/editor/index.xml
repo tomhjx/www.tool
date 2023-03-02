@@ -160,13 +160,12 @@ oldModel.dispose();
 &lt;div id="mermaideditorcontainer0Output" class="col">&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;canvas id="canvas" width="5" height="5">&lt;/canvas>
 &lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">&lt;/script>
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-03 00:49:08")
-var canvas = document.getElementById("canvas");
+console.log("2023-03-03 01:08:32")
+var canvas = document.createElement('canvas');
 var dataURL = canvas.toDataURL();
 console.log(dataURL);
 var blockID = "mermaideditorcontainer0";
