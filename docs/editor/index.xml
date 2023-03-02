@@ -164,7 +164,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log(" 2023-03-02 09:07:37")
+console.log("2023-03-02 09:24:14")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -193,18 +193,17 @@ var url = win.createObjectURL(blob);
 var _img = loadImage(url, function(){
 var imgH=_img.height;
 var imgW=_img.width;
+var scaleBy = 2;
 const scale = window.devicePixelRatio*2;
 var _canvas = document.createElement('canvas');
-_canvas.width=imgW;
-_canvas.height=imgH;
-var _ctx = _canvas.getContext('2d');
-_canvas['style']['width'] = `${Math.round(imgW/scale)}px`;
-_canvas['style']['height'] = `${Math.round(imgH/scale)}px`;
-_canvas['style']['margin'] = '0';
-_canvas['style']['padding'] = '0';
-_ctx.scale(scale, scale);
-_ctx.drawImage(_img, 0, 0, Math.round(imgW/scale), Math.round(imgH/scale));
-window.open(_canvas.toDataURL('image/png'))
+_canvas.width = imgW*scaleBy;
+_canvas.height = imgH*scaleBy;
+_canvas.style.width = imgW+"px" ;
+_canvas.style.hight = imgH+"px";
+var context = _canvas.getContext("2d");
+context.scale(scaleBy,scaleBy);
+context.drawImage(_img, 0, 0);
+console.log(_canvas.toDataURL('image/png'))
 });
 });
 })
