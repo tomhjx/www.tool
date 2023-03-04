@@ -164,7 +164,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-04 22:06:37")
+console.log("2023-03-04 22:40:58")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -204,8 +204,8 @@ var imgW=img.width;
 var scaleBy = 2;
 var _canvas = document.createElement('canvas');
 var scale = window.devicePixelRatio*scaleBy;
-_canvas.width = imgW*scale;
-_canvas.height = imgH*scale;
+_canvas.width = Math.floor(imgW*scale);
+_canvas.height = Math.floor(imgH*scale);
 _canvas.style.width = imgH+"px" ;
 _canvas.style.hight = imgW+"px";
 var _ctx = _canvas.getContext("2d");
