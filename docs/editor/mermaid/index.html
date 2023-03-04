@@ -25,7 +25,7 @@
 <meta itemprop=name content="Markdown Mermaid">
 <meta itemprop=description content="Rich IntelliSense, Validation for Mermaid.
 ">
-<meta itemprop=wordCount content="154">
+<meta itemprop=wordCount content="148">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Markdown Mermaid">
 <meta name=twitter:description content="Rich IntelliSense, Validation for Mermaid.
@@ -53,7 +53,7 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.b82610afcc62b98d47fedccc7abf7348.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.c04b34b7df4bb09276923d8b839ec104.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div>
 </nav>
 </header>
@@ -63,7 +63,7 @@
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.b82610afcc62b98d47fedccc7abf7348.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.c04b34b7df4bb09276923d8b839ec104.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -145,9 +145,7 @@
 <textarea id=mermaideditorcontainer0 class="border w-100" style=height:200px></textarea>
 <div class=btn-group role=group>
 <a class="btn btn-outline-primary" href=### target=_blank id=mermaideditorcontainer0LinkToView>Link to view</a>
-<button type=button class="btn btn-secondary" id=mermaideditorcontainer0LinkToIMG>Link to Image</button>
-<button type=button class="btn btn-secondary" id=mermaideditorcontainer0LinkToSVG>Link to SVG</button>
-<button type=button class="btn btn-secondary" id=mermaideditorcontainer0CopyToIMG>Copy Image</button>
+<button type=button class="btn btn-outline-primary" id=mermaideditorcontainer0CopyToIMG>Copy Image</button>
 <a class="btn btn-outline-primary" id=mermaideditorcontainer0DownloadPNG href=javascript:; download=a.png>Download PNG</a>
 <a class="btn btn-outline-primary" id=mermaideditorcontainer0DownloadSVG href=javascript:; download=a.svg>Download SVG</a>
 </div>
@@ -156,7 +154,7 @@
 </div>
 </div>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
-<script>mermaid.initialize({startOnLoad:!1}),$(function(){var d,g,h,i,f,e,b,c,a;console.log("2023-03-05 01:27:34"),d="mermaideditorcontainer0",g=document.getElementById(d),h=document.getElementById(d+'Output'),i=document.getElementById(d+'LinkToView'),f=$('#'+d+'DownloadSVG'),e=$('#'+d+'DownloadPNG'),b=null,c=null,a=new Image,a.crossOrigin="anonymous",a.onload=function(){i.href='https://toolkit.tomhjx.top/docs/editor/mermaid/#'+a.src,console.log("img.naturalWidth="+a.naturalWidth),console.log("img.naturalHeight="+a.naturalHeight),console.log("img.width="+a.width),console.log("img.height="+a.height)};function j(){var b,d,e;return c||(c=document.createElement('canvas')),b=a.height,d=a.width,c.width=d,c.height=b,e=c.getContext("2d"),e.drawImage(a,0,0),c}g.onkeyup=function(){mermaid.mermaidAPI.render('theGraph',g.value,function(f){var c,d,e;h.innerHTML=f,b=h.querySelector('svg'),c=(new XMLSerializer).serializeToString(b),d=btoa(unescape(encodeURIComponent(c))),e=`data:image/svg+xml;charset=utf-8;base64,${d}`,a.src=e,console.log("svg.getBoundingClientRect.width="+b.getBoundingClientRect().width),console.log("svg.getBoundingClientRect.height="+b.getBoundingClientRect().height),console.log("svg.getBBox.width="+b.getBBox().width),console.log("svg.getBBox.height="+b.getBBox().height),a.width=b.getBBox().width,a.height=b.getBBox().height})},f.click(function(){f.attr("href",a.src)}),e.click(function(){e.attr("href",j().toDataURL('image/png')),e.attr("download",self.crypto.randomUUID()+'.png')})})</script>
+<script>mermaid.initialize({startOnLoad:!1}),$(function(){var d,g,h,i,f,e,b,c,a;console.log("2023-03-05 01:32:53"),d="mermaideditorcontainer0",g=document.getElementById(d),h=document.getElementById(d+'Output'),i=document.getElementById(d+'LinkToView'),f=$('#'+d+'DownloadSVG'),e=$('#'+d+'DownloadPNG'),b=null,c=null,a=new Image,a.crossOrigin="anonymous",a.onload=function(){i.href='https://toolkit.tomhjx.top/docs/editor/mermaid/#'+a.src,console.log("img.naturalWidth="+a.naturalWidth),console.log("img.naturalHeight="+a.naturalHeight),console.log("img.width="+a.width),console.log("img.height="+a.height)};function j(){var b,d,e;return c||(c=document.createElement('canvas')),b=a.height,d=a.width,c.width=d,c.height=b,e=c.getContext("2d"),e.drawImage(a,0,0),c}g.onkeyup=function(){mermaid.mermaidAPI.render('theGraph',g.value,function(f){var c,d,e;h.innerHTML=f,b=h.querySelector('svg'),c=(new XMLSerializer).serializeToString(b),d=btoa(unescape(encodeURIComponent(c))),e=`data:image/svg+xml;charset=utf-8;base64,${d}`,a.src=e,console.log("svg.getBoundingClientRect.width="+b.getBoundingClientRect().width),console.log("svg.getBoundingClientRect.height="+b.getBoundingClientRect().height),console.log("svg.getBBox.width="+b.getBBox().width),console.log("svg.getBBox.height="+b.getBBox().height),a.width=b.getBBox().width,a.height=b.getBBox().height})},f.click(function(){f.attr("href",a.src)}),e.click(function(){e.attr("href",j().toDataURL('image/png')),e.attr("download",self.crypto.randomUUID()+'.png')})})</script>
 <p>To learn more about <a href=https://mermaid.js.org/>Mermaid</a></p>
 </div>
 </main>

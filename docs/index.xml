@@ -648,9 +648,7 @@ oldModel.dispose();
 &lt;textarea id="mermaideditorcontainer0" class="border w-100" style="height: 200px;" >&lt;/textarea>
 &lt;div class="btn-group" role="group">
 &lt;a class="btn btn-outline-primary" href="###" target="_blank" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/a>
-&lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0LinkToIMG" >Link to Image&lt;/button>
-&lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0LinkToSVG" >Link to SVG&lt;/button>
-&lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0CopyToIMG" >Copy Image&lt;/button>
+&lt;button type="button" class="btn btn-outline-primary" id="mermaideditorcontainer0CopyToIMG" >Copy Image&lt;/button>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
@@ -662,7 +660,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-05 01:27:34")
+console.log("2023-03-05 01:32:53")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
