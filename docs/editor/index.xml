@@ -164,7 +164,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-04 17:11:39")
+console.log("2023-03-04 17:11:58")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -182,7 +182,6 @@ svg = output.querySelector('svg');
 var svgData = new XMLSerializer().serializeToString(svg);
 var svgDataBase64 = btoa(unescape(encodeURIComponent(svgData)))
 var svgDataUrl = `data:image/svg+xml;charset=utf-8;base64,${svgDataBase64}`
-var blob = new Blob([svgData], { type: 'image/svg+xml' });
 img.src = svgDataUrl
 });
 }
