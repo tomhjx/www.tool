@@ -660,7 +660,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-04 22:48:41")
+console.log("2023-03-04 22:56:44")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
@@ -695,8 +695,8 @@ img.src = url;
 return img;
 }
 downloadPNG.click(function(){
-var imgH=img.height;
-var imgW=img.width;
+var imgH=img.naturalHeight;
+var imgW=img.naturalWidth;
 var scaleBy = 2;
 var _canvas = document.createElement('canvas');
 var scale = window.devicePixelRatio*scaleBy;
@@ -706,7 +706,7 @@ _canvas.style.width = Math.floor(imgH*scale)+"px" ;
 _canvas.style.hight = Math.floor(imgW*scale)+"px";
 var _ctx = _canvas.getContext("2d");
 _ctx.scale(scale,scale);
-_ctx.drawImage(img, 0, 0);
+_ctx.drawImage(img, 0, 0, imgW, imgH);
 downloadPNG.attr("href", _canvas.toDataURL('image/png'))
 });
 })
