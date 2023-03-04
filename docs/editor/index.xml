@@ -164,12 +164,13 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-04 16:19:56")
+console.log("2023-03-04 16:36:50")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
 var svg = null
 var img = new Image();
+img.crossOrigin="anonymous";
 $( "body" ).append(img);
 input.onkeyup = function() {
 mermaid.mermaidAPI.render('theGraph', input.value, function(svgCode) {
