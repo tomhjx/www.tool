@@ -155,7 +155,7 @@ oldModel.dispose();
 &lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0LinkToSVG" >Link to SVG&lt;/button>
 &lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0CopyToIMG" >Copy Image&lt;/button>
 &lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0DownloadPNG" >Download PNG&lt;/button>
-&lt;button type="button" class="btn btn-secondary" id="mermaideditorcontainer0DownloadSVG" >Download SVG&lt;/button>
+&lt;a class="btn btn-secondary" id="mermaideditorcontainer0DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
 &lt;div id="mermaideditorcontainer0Output" class="col">&lt;/div>
 &lt;/div>
@@ -164,11 +164,12 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-04 19:14:43")
+console.log("2023-03-04 19:38:32")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
 var linkToView = document.getElementById(blockID+'LinkToView');
+var downloadSVG = $('#'+blockID+'DownloadSVG');
 var svg = null
 var img = new Image();
 img.crossOrigin="anonymous";
@@ -177,7 +178,6 @@ console.log("img had load.")
 console.log(img.src)
 linkToView.href = img.src
 }
-$( "body" ).append(img);
 input.onkeyup = function() {
 mermaid.mermaidAPI.render('theGraph', input.value, function(svgCode) {
 output.innerHTML = svgCode;
@@ -188,6 +188,9 @@ var svgDataUrl = `data:image/svg+xml;charset=utf-8;base64,${svgDataBase64}`
 img.src = svgDataUrl
 });
 }
+downloadSVG.click(function(){
+downloadSVG.attr("href", img.src)
+});
 function loadImage(img, url, onload) {
 img.onload = onload;
 img.crossOrigin="anonymous";
