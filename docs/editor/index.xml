@@ -167,15 +167,16 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-05 09:23:03")
+console.log("2023-03-05 09:53:01")
 var blockID = "mermaideditorcontainer0";
-var input = document.getElementById(blockID);
+var input = $('#'+blockID);
 var output = document.getElementById(blockID+'Output');
 var linkToView = document.getElementById(blockID+'LinkToView');
 var downloadSVG = $('#'+blockID+'DownloadSVG');
 var downloadPNG = $('#'+blockID+'DownloadPNG');
 var svg = null
 var canvas = null
+var timeout = null
 var img = new Image();
 img.crossOrigin="anonymous";
 img.onload=function(){
@@ -197,8 +198,8 @@ var ctx = canvas.getContext("2d");
 ctx.drawImage(img, 0, 0);
 return canvas;
 }
-input.onkeyup = function() {
-mermaid.mermaidAPI.render('theGraph', input.value, function(svgCode) {
+function renderMermaid() {
+mermaid.mermaidAPI.render('theGraph', input.val(), function(svgCode) {
 output.innerHTML = svgCode;
 svg = output.querySelector('svg');
 var svgData = new XMLSerializer().serializeToString(svg);
@@ -209,6 +210,12 @@ img.width = svg.getBBox().width
 img.height = svg.getBBox().height
 });
 }
+input.keydown(function(){
+clearTimeout(timeout)
+})
+input.keyup(function(){
+timeout = setTimeout(renderMermaid, 1000)
+})
 downloadSVG.click(function(){
 downloadPNG.attr("href", draw().toDataURL('image/png'))
 });
