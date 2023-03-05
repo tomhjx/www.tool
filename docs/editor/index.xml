@@ -150,9 +150,9 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col">
 &lt;div class="btn-group" role="group">
-&lt;button class="btn btn-outline-primary" id="preview" >Preview&lt;/button>
-&lt;a class="btn btn-outline-primary" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
-&lt;a class="btn btn-outline-primary" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
+&lt;button class="btn btn-outline-primary btn-sm" id="preview" >Preview&lt;/button>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;/div>

@@ -578,8 +578,8 @@ oldModel.dispose();
 &lt;script src="/js/gofmt.js" async>&lt;/script>
 &lt;div class="container">
 &lt;div class="row">
-&lt;div class="col form-check form-switch"> &lt;label>&lt;input class="form-check-input" type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
-&lt;div class="col">&lt;span class="btn btn-primary" id="copy-btn">Copy to clipboard&lt;/span>
+&lt;div class="col"> &lt;label>&lt;input class="form-check-input" type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
+&lt;div class="col">&lt;span class="btn btn-outline-primary btn-sm" id="copy-btn">Copy to clipboard&lt;/span>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
@@ -589,31 +589,9 @@ oldModel.dispose();
 &lt;div class="col">
 &lt;div id="output">
 &lt;/div>
-&lt;i class="bi bi-clipboard">&lt;/i>
 &lt;/div>
 &lt;/div>
-&lt;/div>
-&lt;!--
-&lt;script src="/js/jquery.min.js">&lt;/script>
-&lt;link rel="stylesheet" href="https://mholt.github.io/json-to-go/resources/css/tomorrow.highlight.css">
-&lt;link rel="stylesheet" href="https://mholt.github.io/json-to-go/resources/css/common.css">
-&lt;table>
-&lt;tr>
-&lt;th style="width: 45%;">JSON&lt;/th>
-&lt;th style="width: 10%; font-size: 22px;">&amp;#8594;&lt;/th>
-&lt;th style="width: 45%;">Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;span class="copy" id="copy-btn">Copy to clipboard&lt;/span>&lt;/th>
-&lt;/tr>
-&lt;/table>
-&lt;table>
-&lt;tr>
-&lt;td style="width: 50%;">
-&lt;div id="input" contenteditable>&lt;/div>
-&lt;/td>
-&lt;td style="width: 50%;">
-&lt;div id="output">&lt;/div>
-&lt;/td>
-&lt;/tr>
-&lt;/table> --></description></item><item><title>Docs: LESS</title><link>/docs/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/less/</guid><description>
+&lt;/div></description></item><item><title>Docs: LESS</title><link>/docs/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/less/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
@@ -647,9 +625,9 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col">
 &lt;div class="btn-group" role="group">
-&lt;button class="btn btn-outline-primary" id="preview" >Preview&lt;/button>
-&lt;a class="btn btn-outline-primary" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
-&lt;a class="btn btn-outline-primary" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
+&lt;button class="btn btn-outline-primary btn-sm" id="preview" >Preview&lt;/button>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
+&lt;a class="btn btn-outline-primary btn-sm" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;/div>
