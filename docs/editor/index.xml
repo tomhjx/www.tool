@@ -148,10 +148,12 @@ oldModel.dispose();
 &lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/mermaid/</guid><description>
 &lt;div class="container text-left">
 &lt;div class="row">
-&lt;div class="col btn-group" role="group">
+&lt;div class="col">
+&lt;div class="btn-group" role="group">
 &lt;a class="btn btn-outline-primary" href="###" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/a>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
+&lt;/div>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
@@ -165,7 +167,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-05 09:18:17")
+console.log("2023-03-05 09:23:03")
 var blockID = "mermaideditorcontainer0";
 var input = document.getElementById(blockID);
 var output = document.getElementById(blockID+'Output');
