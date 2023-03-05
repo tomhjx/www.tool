@@ -150,7 +150,7 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col">
 &lt;div class="btn-group" role="group">
-&lt;a class="btn btn-outline-primary" href="###" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/a>
+&lt;button class="btn btn-outline-primary" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/button>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
@@ -167,7 +167,6 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-05 10:35:09")
 var blockID = "mermaideditorcontainer0";
 var input = $('#'+blockID);
 var output = document.getElementById(blockID+'Output');
@@ -217,7 +216,8 @@ input.keyup(function(){
 timeout = setTimeout(renderMermaid, 1000)
 })
 downloadSVG.click(function(){
-downloadPNG.attr("href", draw().toDataURL('image/png'))
+var win = window.open();
+win.document.write('&lt;img src="' + img.src + '"/>');
 });
 downloadPNG.click(function(){
 downloadPNG.attr("href", draw().toDataURL('image/png'))
