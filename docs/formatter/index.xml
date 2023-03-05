@@ -9,7 +9,7 @@ Coming soon</description></item><item><title>Docs: JSON to GO</title><link>/docs
 &lt;div class="row">
 &lt;div class="col form-check form-switch"> &lt;label>&lt;input class="form-check-input" type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
 &lt;div class="col">&lt;span class="btn btn-primary" id="copy-btn">Copy to clipboard&lt;/span>
-&lt;button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">&lt;/button>
+&lt;i class="bi bi-clipboard">&lt;/i>
 &lt;/div>
 &lt;/div>
 &lt;div class="row">
