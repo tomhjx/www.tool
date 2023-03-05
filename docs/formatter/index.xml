@@ -7,8 +7,10 @@ Coming soon</description></item><item><title>Docs: JSON to GO</title><link>/docs
 &lt;script src="/js/gofmt.js" async>&lt;/script>
 &lt;div class="container">
 &lt;div class="row">
-&lt;div class="col"> Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
-&lt;div class="col">&lt;span class="copy" id="copy-btn">Copy to clipboard&lt;/span> &lt;/div>
+&lt;div class="col form-check form-switch"> &lt;label>&lt;input class="form-check-input" type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
+&lt;div class="col">&lt;span class="btn btn-primary" id="copy-btn">Copy to clipboard&lt;/span>
+&lt;button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+&lt;/div>
 &lt;/div>
 &lt;div class="row">
 &lt;div class="col">
