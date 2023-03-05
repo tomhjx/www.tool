@@ -148,7 +148,7 @@ oldModel.dispose();
 &lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/mermaid/</guid><description>
 &lt;div class="container text-left">
 &lt;div class="row">
-&lt;div class="col">
+&lt;div class="col-2">
 &lt;div class="btn-group" role="group">
 &lt;button class="btn btn-outline-primary" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/button>
 &lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
