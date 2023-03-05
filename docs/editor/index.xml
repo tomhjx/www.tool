@@ -159,6 +159,7 @@ oldModel.dispose();
 &lt;div class="row">
 &lt;div class="col">
 &lt;textarea id="input" class="border w-100" style="height: 500px;" placeholder="graph TB&lt;br/>a-->b" >&lt;/textarea>
+To learn more about [Mermaid](https://mermaid.js.org/)
 &lt;/div>
 &lt;div id="output" class="col">&lt;/div>
 &lt;/div>
@@ -200,7 +201,7 @@ return canvas;
 function renderMermaid() {
 mermaid.mermaidAPI.render('theGraph', input.val(), function(svgCode) {
 output.html(svgCode);
-svg = output.find('svg').eq(0);
+svg = output.find('svg');
 var svgData = new XMLSerializer().serializeToString(svg);
 var svgDataBase64 = btoa(unescape(encodeURIComponent(svgData)))
 svgDataUrl = `data:image/svg+xml;charset=utf-8;base64,${svgDataBase64}`
@@ -232,90 +233,7 @@ downloadPNG.attr("href", draw().toDataURL('image/png'))
 downloadPNG.attr("download", self.crypto.randomUUID()+'.png')
 });
 })
-&lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/mermaid/</guid><description>
-&lt;div class="container text-left">
-&lt;div class="row">
-&lt;div class="col-2">
-&lt;div class="btn-group" role="group">
-&lt;button class="btn btn-outline-primary" id="mermaideditorcontainer0LinkToView" >Link to view&lt;/button>
-&lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
-&lt;a class="btn btn-outline-primary" id="mermaideditorcontainer0DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="row">
-&lt;div class="col">
-&lt;textarea id="mermaideditorcontainer0" class="form-control border w-100" style="height: 200px;" placeholder="markdown" >&lt;/textarea>
-&lt;/div>
-&lt;div id="mermaideditorcontainer0Output" class="col">&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">&lt;/script>
-&lt;script >
-mermaid.initialize({startOnLoad:false});
-$(function(){
-var blockID = "mermaideditorcontainer0";
-var input = $('#'+blockID);
-var output = document.getElementById(blockID+'Output');
-var linkToView = $('#'+blockID+'LinkToView');
-var downloadSVG = $('#'+blockID+'DownloadSVG');
-var downloadPNG = $('#'+blockID+'DownloadPNG');
-var svg = null
-var canvas = null
-var timeout = null
-var svgDataUrl = ''
-var img = new Image();
-img.crossOrigin="anonymous";
-img.onload=function(){
-console.log("img.naturalWidth="+img.naturalWidth)
-console.log("img.naturalHeight="+img.naturalHeight)
-console.log("img.width="+img.width)
-console.log("img.height="+img.height)
-}
-function draw() {
-if (!canvas) {
-canvas = document.createElement('canvas');
-}
-var imgH=img.height;
-var imgW=img.width;
-canvas.width = imgW;
-canvas.height = imgH;
-var ctx = canvas.getContext("2d");
-ctx.drawImage(img, 0, 0);
-return canvas;
-}
-function renderMermaid() {
-mermaid.mermaidAPI.render('theGraph', input.val(), function(svgCode) {
-output.innerHTML = svgCode;
-svg = output.querySelector('svg');
-var svgData = new XMLSerializer().serializeToString(svg);
-var svgDataBase64 = btoa(unescape(encodeURIComponent(svgData)))
-svgDataUrl = `data:image/svg+xml;charset=utf-8;base64,${svgDataBase64}`
-img.src = svgDataUrl
-img.width = svg.getBBox().width
-img.height = svg.getBBox().height
-});
-}
-input.keydown(function(){
-clearTimeout(timeout)
-})
-input.keyup(function(){
-timeout = setTimeout(renderMermaid, 500)
-})
-linkToView.click(function(){
-var win = window.open();
-win.document.write('&lt;img src="' + img.src + '"/>');
-})
-downloadSVG.click(function(){
-downloadPNG.attr("href", svgDataUrl)
-});
-downloadPNG.click(function(){
-downloadPNG.attr("href", draw().toDataURL('image/png'))
-downloadPNG.attr("download", self.crypto.randomUUID()+'.png')
-});
-})
-&lt;/script>
-&lt;p>To learn more about &lt;a href="https://mermaid.js.org/">Mermaid&lt;/a>&lt;/p></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
+&lt;/script></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
