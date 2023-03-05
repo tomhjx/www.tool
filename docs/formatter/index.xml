@@ -6,7 +6,7 @@ Coming soon</description></item><item><title>Docs: JSON to GO</title><link>/docs
 &lt;script src="/js/content/docs/formatter/json2go.js">&lt;/script>
 &lt;script src="/js/gofmt.js" async>&lt;/script>
 &lt;div class="container">
-&lt;div class="row">
+&lt;div class="row p-2">
 &lt;div class="col"> &lt;label>&lt;input class="form-check-input" type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
 &lt;div class="col">&lt;span class="btn btn-outline-primary btn-sm" id="copy-btn">Copy to clipboard&lt;/span>
 &lt;/div>
