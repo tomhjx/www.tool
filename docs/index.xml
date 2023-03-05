@@ -578,10 +578,8 @@ oldModel.dispose();
 &lt;script src="/js/gofmt.js" async>&lt;/script>
 &lt;div class="container">
 &lt;div class="row">
-Convert JSON to Go struct
-&lt;/div>
-&lt;div class="row">
-Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;span class="copy" id="copy-btn">Copy to clipboard&lt;/span>
+&lt;div class="col"> Go &lt;label>&lt;input type="checkbox" id="inline" checked>Inline type definitions&lt;/label> &lt;/div>
+&lt;div class="col">&lt;span class="copy" id="copy-btn">Copy to clipboard&lt;/span> &lt;/div>
 &lt;/div>
 &lt;div class="row">
 &lt;div class="col">
