@@ -167,7 +167,7 @@ oldModel.dispose();
 &lt;script >
 mermaid.initialize({startOnLoad:false});
 $(function(){
-console.log("2023-03-05 09:53:01")
+console.log("2023-03-05 10:24:11")
 var blockID = "mermaideditorcontainer0";
 var input = $('#'+blockID);
 var output = document.getElementById(blockID+'Output');
