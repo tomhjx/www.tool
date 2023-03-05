@@ -146,14 +146,13 @@ oldModel.dispose();
 });
 })
 &lt;/script></description></item><item><title>Docs: Markdown Mermaid</title><link>/docs/editor/markdown-mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/markdown-mermaid/</guid><description>
-&lt;link rel="stylesheet" href="/css/content/docs/formatter/json2go.css">
 &lt;div class="container text-left">
 &lt;div class="row">
 &lt;div class="col-2">
 &lt;div class="btn-group" role="group">
-&lt;button class="btn btn-outline-primary" id="{{ $blockID }}LinkToView" >Link to view&lt;/button>
-&lt;a class="btn btn-outline-primary" id="{{ $blockID }}DownloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
-&lt;a class="btn btn-outline-primary" id="{{ $blockID }}DownloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
+&lt;button class="btn btn-outline-primary" id="preview" >Preview&lt;/button>
+&lt;a class="btn btn-outline-primary" id="downloadPNG" href="javascript:;" download="a.png" >Download PNG&lt;/a>
+&lt;a class="btn btn-outline-primary" id="downloadSVG" href="javascript:;" download="a.svg" >Download SVG&lt;/a>
 &lt;/div>
 &lt;/div>
 &lt;/div>
@@ -171,7 +170,7 @@ mermaid.initialize({startOnLoad:false});
 $(function(){
 var input = $('#input');
 var output = $('#output');
-var linkToView = $('#linkToView');
+var linkToView = $('#preview');
 var downloadSVG = $('#downloadSVG');
 var downloadPNG = $('#dDownloadPNG');
 var svg = null
