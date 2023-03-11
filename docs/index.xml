@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool Kit – Documentation</title><link>/docs/</link><description>Recent content in Documentation on Tool Kit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: CSS</title><link>/docs/editor/css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/css/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'css';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -483,12 +483,12 @@ Coming soon</description></item><item><title>Docs: Free Proxies used ClashX Conf
 &lt;span style="color:#f92672">skip-cert-verify&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: HTML</title><link>/docs/editor/html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/html/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'html';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -512,12 +512,12 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Docs: JavaScript</title><link>/docs/editor/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/javascript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'javascript';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -542,12 +542,12 @@ oldModel.dispose();
 &lt;/script>
 &lt;p>To learn more about &lt;a href="https://www.javascript.com/">JavaScript&lt;/a>&lt;/p></description></item><item><title>Docs: JSON</title><link>/docs/editor/json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/json/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'json';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -593,12 +593,12 @@ oldModel.dispose();
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: LESS</title><link>/docs/editor/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/less/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'less';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -713,12 +713,12 @@ renderMermaid();
 })
 &lt;/script></description></item><item><title>Docs: SCSS</title><link>/docs/editor/scss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/scss/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'scss';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
@@ -742,12 +742,12 @@ oldModel.dispose();
 })
 &lt;/script></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
-&lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
+&lt;script src="/pkg/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
 $(function(){
 var blockID = "editorcontainer0";
 var modeId = 'typescript';
-require.config({ paths: { vs: 'https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { vs: '/pkg/monaco-editor/min/vs/' } });
 require(['vs/editor/editor.main'], function () {
 var editor = monaco.editor.create(document.getElementById(blockID), {
 language: modeId
