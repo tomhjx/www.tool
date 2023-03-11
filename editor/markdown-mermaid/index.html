@@ -1,4 +1,4 @@
-<!doctype html><html lang=en class=no-js>
+<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en class=no-js>
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -14,16 +14,18 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>404 Page not found | Tool Kit</title>
-<meta name=description content>
-<meta property="og:title" content="404 Page not found">
-<meta property="og:description" content>
-<meta property="og:type" content="website">
-<meta property="og:url" content="/404.html">
-<meta itemprop=name content="404 Page not found">
-<meta itemprop=description content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="404 Page not found">
-<meta name=twitter:description content>
+<title>Markdown Mermaid | Tool Kit</title>
+<meta name=description content="Online Editor, Preview for Markdown Mermaid.">
+<meta property="og:title" content="Markdown Mermaid">
+<meta property="og:description" content="Online Editor, Preview for Markdown Mermaid.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/editor/markdown-mermaid/"><meta property="article:section" content="editor">
+<meta itemprop=name content="Markdown Mermaid">
+<meta itemprop=description content="Online Editor, Preview for Markdown Mermaid.">
+<meta itemprop=wordCount content="168">
+<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Markdown Mermaid">
+<meta name=twitter:description content="Online Editor, Preview for Markdown Mermaid.">
 <link rel=preload href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css as=style>
 <link href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
@@ -32,7 +34,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TEJLB7B10"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-3TEJLB7B10',{anonymize_ip:!1})}</script>
 </head>
-<body class=td-404>
+<body class=td-page>
 <header>
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
 <a class=navbar-brand href=/>
@@ -52,15 +54,43 @@
 </div>
 </nav>
 </header>
-<div class="container-fluid td-default td-outer">
-<main role=main class=td-main>
-<main id=main>
-<div>
-<h1 id=title>Not found</h1>
-<p>Oops! This page doesn't exist. Try going back to our <a href=/>home page</a>.</p>
+<div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 ps-md-5" role=main>
+<nav aria-label=breadcrumb class=td-breadcrumbs>
+<ol class=breadcrumb>
+<li class=breadcrumb-item>
+<a href=/editor/>Editors</a>
+</li>
+<li class="breadcrumb-item active" aria-current=page>
+<a href=/editor/markdown-mermaid/>Markdown Mermaid</a>
+</li>
+</ol>
+</nav>
+<div class="container text-left">
+<div class=row>
+<div class="col p-2">
+<div class=btn-group role=group>
+<button class="btn btn-outline-primary btn-sm" id=preview>Preview</button>
+<a class="btn btn-outline-primary btn-sm" id=downloadPNG href=javascript:; download=a.png>Download PNG</a>
+<a class="btn btn-outline-primary btn-sm" id=downloadSVG href=javascript:; download=a.svg>Download SVG</a>
 </div>
+</div>
+</div>
+<div class=row>
+<div class=col>
+<textarea id=input class="border w-100" style=height:500px placeholder="please put the code here"></textarea>
+To learn more about <a href=https://mermaid.js.org/>Mermaid</a>
+</div>
+<div id=output class=col></div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!1}),$(function(){var e=$('#input'),g=$('#output'),j=$('#preview'),k=$('#downloadSVG'),c=$('#downloadPNG'),d=null,b=null,h=null,f='',a=new Image;a.crossOrigin="anonymous",a.onload=function(){console.log("img.naturalWidth="+a.naturalWidth),console.log("img.naturalHeight="+a.naturalHeight),console.log("img.width="+a.width),console.log("img.height="+a.height)};function l(){var c,d,e;return b||(b=document.createElement('canvas')),c=a.height,d=a.width,b.width=d,b.height=c,e=b.getContext("2d"),e.drawImage(a,0,0),b}function i(){mermaid.mermaidAPI.render('theGraph',e.val(),function(e){var b,c;g.html(e),d=g.find('svg')[0],b=(new XMLSerializer).serializeToString(d),c=btoa(unescape(encodeURIComponent(b))),f=`data:image/svg+xml;charset=utf-8;base64,${c}`,a.src=f,a.width=d.getBBox().width,a.height=d.getBBox().height})}e.keydown(function(){clearTimeout(h)}),e.keyup(function(){h=setTimeout(i,500)}),j.click(function(){var b=window.open();b.document.write('<img src="'+a.src+'" />')}),k.click(function(){c.attr("href",f)}),c.click(function(){c.attr("href",l().toDataURL('image/png')),c.attr("download",self.crypto.randomUUID()+'.png')}),e.val('graph TB\na-->b'),i()})</script>
 </main>
-</main>
+</div>
+</div>
 <footer class="bg-dark py-5 row d-print-none">
 <div class="container-fluid mx-sm-5">
 <div class=row>

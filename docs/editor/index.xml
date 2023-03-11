@@ -265,45 +265,7 @@ oldModel.dispose();
 });
 });
 })
-&lt;/script></description></item><item><title>Docs: Test</title><link>/docs/editor/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/test/</guid><description>
-&lt;section id="td-cover-block-0" class="row td-cover-block td-cover-block--height-min js-td-cover td-overlay td-overlay--dark -bg-dark">
-&lt;div class="container td-overlay__inner">
-&lt;div class="row">
-&lt;div class="col-12">
-&lt;div class="text-center">
-&lt;h1 class="display-1 mt-0 mt-md-5 pb-4">About Goldydocs&lt;/h1>
-&lt;div class="pt-3 lead">
-&lt;!-- raw HTML omitted -->
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/section>
-&lt;a id="td-block-1" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
-&lt;div class="container text-center td-arrow-down">
-&lt;span class="h4 mb-0">
-&lt;!-- raw HTML omitted -->
-&lt;/span>
-&lt;/div>
-&lt;/section>
-&lt;a id="td-block-2" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--2 td-box--gradient td-box--height-auto">
-&lt;div class="col">
-&lt;div class="row ">
-&lt;!-- raw HTML omitted -->
-&lt;/div>
-&lt;/div>
-&lt;/section>
-&lt;a id="td-block-3" class="td-offset-anchor">&lt;/a>
-&lt;section class="row td-box td-box--3 td-box--gradient td-box--height-auto">
-&lt;div class="col">
-&lt;div class="row ">
-&lt;!-- raw HTML omitted -->
-&lt;/div>
-&lt;/div>
-&lt;/section></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
+&lt;/script></description></item><item><title>Docs: TypeScript</title><link>/docs/editor/typescript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/editor/typescript/</guid><description>
 &lt;div id="editorcontainer0" class="td-box--height-full border w-100" >&lt;/div>
 &lt;script src="https://microsoft.github.io/monaco-editor/node_modules/monaco-editor/min/vs/loader.js">&lt;/script>
 &lt;script>
