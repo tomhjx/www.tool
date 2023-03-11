@@ -30,7 +30,7 @@
 <link href=/scss/main.min.939ae67ce0dc52797e6d481c2cbac8406425fb480f07ec64cbce4ec0efb995d9.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
 <script src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script>
-<script>console.log("2023-03-11 15:40:28")</script>
+<script>console.log("2023-03-11 15:45:57")</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TEJLB7B10"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-3TEJLB7B10',{anonymize_ip:!1})}</script>
 </head>
@@ -55,8 +55,7 @@
 </nav>
 </header>
 <div class="container-fluid td-outer">
-<div class=td-main>
-<main class="col col-xl-8 ps-md-5" role=main>
+<main class="col ps-md-5" role=main>
 <nav aria-label=breadcrumb class=td-breadcrumbs>
 <ol class=breadcrumb>
 <li class=breadcrumb-item>
@@ -88,7 +87,6 @@ To learn more about <a href=https://mermaid.js.org/>Mermaid</a>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!1}),$(function(){var e=$('#input'),g=$('#output'),j=$('#preview'),k=$('#downloadSVG'),c=$('#downloadPNG'),d=null,b=null,h=null,f='',a=new Image;a.crossOrigin="anonymous",a.onload=function(){console.log("img.naturalWidth="+a.naturalWidth),console.log("img.naturalHeight="+a.naturalHeight),console.log("img.width="+a.width),console.log("img.height="+a.height)};function l(){var c,d,e;return b||(b=document.createElement('canvas')),c=a.height,d=a.width,b.width=d,b.height=c,e=b.getContext("2d"),e.drawImage(a,0,0),b}function i(){mermaid.mermaidAPI.render('theGraph',e.val(),function(e){var b,c;g.html(e),d=g.find('svg')[0],b=(new XMLSerializer).serializeToString(d),c=btoa(unescape(encodeURIComponent(b))),f=`data:image/svg+xml;charset=utf-8;base64,${c}`,a.src=f,a.width=d.getBBox().width,a.height=d.getBBox().height})}e.keydown(function(){clearTimeout(h)}),e.keyup(function(){h=setTimeout(i,500)}),j.click(function(){var b=window.open();b.document.write('<img src="'+a.src+'" />')}),k.click(function(){c.attr("href",f)}),c.click(function(){c.attr("href",l().toDataURL('image/png')),c.attr("download",self.crypto.randomUUID()+'.png')}),e.val('graph TB\na-->b'),i()})</script>
 </main>
-</div>
 <footer class="bg-dark py-5 row d-print-none">
 <div class="container-fluid mx-sm-5">
 <div class=row>
