@@ -698,7 +698,7 @@ timeout = setTimeout(renderMermaid, 500)
 })
 linkToView.click(function(){
 var win = window.open();
-win.document.write('&lt;img src="' + img.src + '"/>');
+win.document.write('&lt;img src="' + img.src + '" style="max-width:100%;" />');
 })
 downloadSVG.click(function(){
 downloadPNG.attr("href", svgDataUrl)
